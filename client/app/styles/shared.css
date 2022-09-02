@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "wotfardregular";
+  src: url("./font/wotfard-regular-webfont.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary: #0089d9;
+  --primary-dark: #00318b;
+  --secondary: #62bf79;
+  --white: #ffffff;
+  --gray_1: #5d5d5d;
+}
+
+.container {
+  max-width: 1320px;
+}

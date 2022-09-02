@@ -1,0 +1,15 @@
+{
+    "title": "Do I have diabetes?",
+    "sub_title": "Test easily in a few minutes to find out",
+    "text_1": "One of the leading causes of death worldwide is a chronic disease called Diabetes. Diabetes is a specific type of disease, not because there is no cure for it, but because it is also a creator or major cause of different kinds of diseases like blindness, kidney failure, or heart attacks.",
+    "text_2": "Fortunately, 90% of the diabetes cases are type 2 and this type of diabetes can often be prevented or delayed, firstly if diagnosed early and secondly by maintaining normal body weight or engaging in physical activity. The main purpose of this project was to come up with a solution that will provide a way for people to get informed and tested in a few minutes whether or not they potentially have diabetes so that they would seek help (expert's advice) on time.",
+    "received_results": "Received diagnostic result from the doctor?",
+
+    "more_info": "More Info",
+    "test_now": "Test Now",
+    "submit_results": "Submit it HERE",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "submit": "Submit"
+}

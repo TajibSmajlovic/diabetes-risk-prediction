@@ -23,33 +23,36 @@ function(gender, age, polyuria, polydipsia, polyphagia,
          partial_paresis, genital_thrush, itching, irritability, 
          weakness, delayed_healing, muscle_stiffness) {
   
-  # print(gender)
-  # print(age)
-  # print(polyuria)
-  # print(polydipsia)
-  # print(alopecia)
-  # print(obesity)
-  # print(sudden_weight_loss)
-  # print(visual_blurring)
-  # print(partial_paresis)
-  # print(genital_thrush)
-  # print(itching)
-  # print(irritability)
-  # print(weakness)
-  # print(delayed_healing)
-  # print(muscle_stiffness)
+
+   print(age)
+   print(polyuria)
+   print(polydipsia)
+   print(alopecia)
+   print(obesity)
+   print(sudden_weight_loss)
+   print(visual_blurring)
+   print(partial_paresis)
+   print(genital_thrush)
+   print(itching)
+   print(irritability)
+   print(weakness)
+   print(delayed_healing)
+   print(muscle_stiffness)
   
-  new_data <- data.frame(as.numeric(gender), as.numeric(age), as.numeric(polyuria), as.numeric(polydipsia), as.numeric(polyphagia), 
-                     as.numeric(alopecia), as.numeric(obesity), as.numeric(sudden_weight_loss), as.numeric(visual_blurring), 
-                     as.numeric(partial_paresis), as.numeric(genital_thrush), as.numeric(itching), as.numeric(irritability), 
-                     as.numeric(weakness), as.numeric(delayed_healing), as.numeric(muscle_stiffness))
+  new_data <- data.frame(as.integer(gender), as.integer(age), as.integer(polyuria), as.integer(polydipsia), as.integer(polyphagia), 
+                         as.integer(alopecia), as.integer(obesity), as.integer(sudden_weight_loss), as.integer(visual_blurring), 
+                         as.integer(partial_paresis), as.integer(genital_thrush), as.integer(itching), as.integer(irritability), 
+                         as.integer(weakness), as.integer(delayed_healing), as.integer(muscle_stiffness))
   
   colnames(new_data) <- c("gender", "age", "polyuria", "polydipsia", "polyphagia", "alopecia", "obesity", 
                           "sudden_weight_loss", "visual_blurring", "partial_paresis", "genital_thrush", 
                           "itching", "irritability", "weakness","delayed_healing","muscle_stiffness")
   
   predicted_result <- predict(model_1, new_data, type = "response")
- 
+  
+  print(predicted_result)
+  print("test")
+  
   return(predicted_result > 0.4)
 }
 

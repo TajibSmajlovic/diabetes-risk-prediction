@@ -1,0 +1,60 @@
+.wrapper {
+  isolation: isolate;
+}
+
+.top-left-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.bottom-right-decoration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.bottom-right-decoration svg {
+  height: 100%;
+}
+
+.doctor-decoration {
+  position: absolute;
+  top: 17%;
+  right: 15%;
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .doctor-decoration {
+    width: 200px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: block;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  .top-left-decoration {
+    opacity: 0.4;
+  }
+
+  .bottom-right-decoration {
+    opacity: 0.4;
+  }
+}
