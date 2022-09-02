@@ -1,4 +1,5 @@
 model_1 <- readRDS("model_1.rds")
+model_2 <- readRDS("model_2.rds")
 
 #* Returns whether or not you would be diagnosed with the diabetes
 #* @param gender Gender 
@@ -49,10 +50,16 @@ function(gender, age, polyuria, polydipsia, polyphagia,
                           "itching", "irritability", "weakness","delayed_healing","muscle_stiffness")
   
   predicted_result <- predict(model_1, new_data, type = "response")
+  predicted_result_2 <- predict(model_2, new_data)
   
   print(predicted_result)
-  print("test")
   
-  return(predicted_result > 0.4)
+  if(predicted_result > 0.4) {
+    print("LR")
+    return (TRUE)
+  } else {
+    print("CT")
+    return (predicted_result_2 > 0.4)
+  }
 }
 

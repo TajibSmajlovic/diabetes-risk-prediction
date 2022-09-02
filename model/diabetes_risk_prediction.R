@@ -185,6 +185,8 @@ text(classifier)
 
 predicted <- predict(classifier, newdata = test)
 
+saveRDS(model_1, "model_2.rds")
+
 predicted > 0.4
 
 table(test$diagnosis_result, predicted > 0.4)
